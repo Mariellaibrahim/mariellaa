@@ -18,20 +18,20 @@ public class Startup
         {
             options.AddPolicy("AllowReactApp",
                 builder => builder
-                    .WithOrigins("http://localhost:3000") // Update with your React app's URL
+                    .WithOrigins("http://localhost:3000") 
                     .AllowAnyMethod()
                     .AllowAnyHeader());
         });
         
-        // Add other services as needed
+       
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
-        // Other middleware configurations...
+      
         
         app.UseCors("AllowReactApp");
 
-        // Other middleware configurations...
+       
     }
 }
