@@ -1,7 +1,7 @@
 using System;
 using MySql.Data.MySqlClient;
 
-class Program
+partial class Program
 {
     static void Main()
     {
